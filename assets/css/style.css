@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f7f6dc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: -20px 0 20px;
+}
+h1 {
+  font-weight: bold;
+  text-align: center;
+}
+/* p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  margin: 20px 0 30px;
+} */
+a {
+  text-decoration: none;
+  color: #008ede;
+  font-size: 14px;
+  margin: 15px 0;
+}
+.form-group.invalid .form-message {
+  color: #f33a58;
+  font-weight: 600;
+}
+.qmk {
+  margin-left: 60px;
+}
+.form-message {
+  font-size: 12px;
+  margin-left: 4px;
+}
+.form-group {
+  display: flex;
+  margin-bottom: 8px;
+  flex-direction: column;
+}
+.container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+.form-container form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.form-container button {
+  width: 185px;
+  margin: 4px 0 0 50px;
+}
+
+.form-container .input-label {
+  font-weight: bold;
+}
+
+.form-container input {
+  background: #eee;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin: 8px 0 4px;
+  width: 100%;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid #64dd77;
+  background-color: #64dd77;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 40px;
+  letter-spacing: 1px;
+  transform: transform 80ms ease-in;
+  opacity: 0.8;
+}
+button:hover {
+  opacity: 1;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ghost {
+  background: transparent;
+  border: 3px solid #fff;
+  margin-top: 16px;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-up-container {
+  right: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+.sign-in-container {
+  right: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+.overlay {
+  background: #64dd77;
+  color: #fff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+  right: 0;
+  transform: translateX(0);
+}
+
+.overlay-right {
+  transform: translateX(-20%);
+}
+
+/* Animation */
+
+/* Move sign in to the left  */
+.container.left-panel-active .sign-in-container {
+  transform: translateX(-100%);
+}
+
+/* Move overlay to right */
+.container.left-panel-active .overlay-container {
+  transform: translateX(100%);
+}
+
+/* Bring sign up over sign in */
+.container.left-panel-active .sign-up-container {
+  transform: translateX(-100%);
+  opacity: 1;
+  z-index: 5;
+}
+
+/* Move overlay back to the left */
+.container.left-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.container.left-panel-active .overlay-right {
+  transform: translateX(0);
+}
+.container.left-panel-active .overlay-left {
+  transform: translateX(-15%);
+}
+
+.checkbox-style {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin: 4px 0 8px;
+}
+.checkbox-label {
+  cursor: pointer;
+  font-size: 13px;
+}
+.checkbox-label > a {
+  color: blue;
+  font-size: 13px;
+}
+
+.checkbox-style input {
+  display: none;
+}
+.checkbox-sub-box,
+.checkbox-box {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: transparent;
+  transition: all 0.2s linear;
+}
+
+.checkbox-input:checked + .checkbox-box {
+  background-color: #ffc090;
+  border-color: #ffc090;
+  color: white;
+}
