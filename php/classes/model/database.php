@@ -1,21 +1,23 @@
 <?php
 
-class database
+class Database
 {
     private $host = "localhost";
     private $username = "viphong";
     private $password = "viphong";
     private $dbname = "veganetwork";
 
-    protected function Connect()
+    public function Connect()
     {
-        global $host, $dbname, $username, $password;
         try {
-            $pdo = new PDO("mysql:host=$host; dbname=$dbname; charset=utf8", $username, $password);
+            $pdo = new PDO("mysql:host=$this->host; dbname=$this->dbname; charset=utf8", $this->username, $this->password);
             $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+            return $pdo;
         } catch (PDOException $e) {
             die("Lỗi : " . $e->getMessage());
         }
-        return $pdo;
     }
 }
+
+$a = new Database();
+$a->Connect();

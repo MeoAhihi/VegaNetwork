@@ -15,7 +15,7 @@
   <body>
     <div class="container" id="container">
       <div class="form-container sign-up-container">
-        <form action="./controller/signup.php" class="form" id="form-1" method="POST">
+        <form action="./include/signup.inc.php" class="form" id="form-1" method="POST">
           <h1>Đăng ký</h1>
           <div class="form-group">
             <label class="input-label" for="fullname">Tên người dùng</label>
@@ -83,7 +83,7 @@
       </div>
 
       <div class="form-container sign-in-container">
-        <form action="./controller/login.php" class="form" id="form-2" method="POST">
+        <form action="./include/login.inc.php" class="form" id="form-2" method="POST">
           <h1>Đăng nhập</h1>
           <div class="form-group">
             <label class="input-label" for="email">Email</label>
