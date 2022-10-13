@@ -14,6 +14,18 @@ body {
 .text-white {
   color: #fff !important;
 }
+.fz-24 {
+  font-size: 24px;
+}
+.fz-28 {
+  font-size: 28px;
+}
+.ml-16 {
+  margin-left: 16px;
+}
+.mg-12 {
+  margin: 12px;
+}
 .mg-32 {
   margin: 32px;
 }
@@ -59,6 +71,7 @@ body {
 }
 
 section {
+  position: relative;
   height: 100vh;
   scroll-snap-align: start;
 }
@@ -98,7 +111,7 @@ section {
   background-color: #64dd77;
   border: none;
   border-radius: 30px;
-  margin: 10px 48px;
+  margin: 10px 48px 10px 16px;
   cursor: pointer;
 }
 .nav__user .nav__user--sub {
@@ -142,9 +155,17 @@ section {
   overflow: hidden;
 }
 .slider__img {
+  position: relative;
   display: flex;
-  width: 100%;
+  width: 500%;
   height: 100vh;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+.slider__img img {
+  float: left;
+  width: 20%;
 }
 #prevBtn {
   position: absolute;
@@ -152,7 +173,7 @@ section {
   left: 1%;
   font-size: 30px;
   padding: 12px;
-  color: white;
+  color: #64dd77;
   cursor: pointer;
   z-index: 10;
 }
@@ -162,7 +183,7 @@ section {
   right: 1%;
   font-size: 30px;
   padding: 12px;
-  color: white;
+  color: #64dd77;
   cursor: pointer;
   z-index: 10;
 }
@@ -176,7 +197,7 @@ section {
 
 #classlist h1 {
   font-size: 72px;
-  padding-top: 36px;
+  padding-top: 40px;
 }
 #classlist .classlist__content {
   display: flex;
@@ -219,16 +240,56 @@ section {
   font-weight: bold;
 }
 #classlist .list--img {
+  animation: modalFadeIn ease 0.8s;
 }
 #maping {
   background-color: #64dd77;
 }
-.nearRes {
+#maping > h1 {
+  padding-top: 100px;
 }
+#maping .maping__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nearRes {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+}
+.nearRes h1 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.nearRes__box {
+  border-radius: 20px;
+  background-color: #7fb77e;
+  height: 460px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+.nearRes__box--child {
+  display: inline-flex;
+  width: 464px;
+  margin: 20px 20px 5px;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 18px;
+}
+.maping__content .map {
+  width: 500px;
+  height: 500px;
+}
+
 #footer {
   display: flex;
   align-items: center;
-  background-color: #f7f6dc;
+  background-color: rgb(247, 246, 220);
 }
 #footer .contact {
   display: flex;
@@ -256,4 +317,39 @@ section {
   opacity: 0.8;
 }
 .copy__right {
+}
+/* Keyframes */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
 }
