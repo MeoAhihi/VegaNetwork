@@ -13,7 +13,7 @@ btn.forEach(function (value) {
 });
 
 btn1.addEventListener("mouseover", () => {
-  img.src = "./assets/img/res_img/pic-1.png";
+  img.src = "../img/res_img/pic-1.png";
 });
 
 btn2.addEventListener("mouseover", () => {
