@@ -1,6 +1,7 @@
 <?php
 include '../model/signup.model.php';
-class SignupContr extends SignupModel{
+class SignupContr extends SignupModel
+{
 
     private $username;
     private $email;
@@ -12,7 +13,7 @@ class SignupContr extends SignupModel{
         $this->email = $email;
         $this->pwd = $pwd;
     }
-    
+
     private function PwdMatch()
     {
         return $this->checkUser($this->username, $this->email);
@@ -25,5 +26,4 @@ class SignupContr extends SignupModel{
         }
         $this->setUser($this->username, $this->email, $this->pwd);
     }
-
 }
