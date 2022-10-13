@@ -5,10 +5,6 @@
   box-sizing: border-box;
   list-style: none;
 }
-a {
-  color: #000;
-  text-decoration: none;
-}
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -171,30 +167,7 @@ section {
   float: left;
   width: 20%;
 }
-#prevBtn {
-  position: absolute;
-  top: 50%;
-  left: 1%;
-  font-size: 30px;
-  padding: 12px;
-  color: #64dd77;
-  cursor: pointer;
-  z-index: 10;
-}
-#nextBtn {
-  position: absolute;
-  top: 50%;
-  right: 1%;
-  font-size: 30px;
-  padding: 12px;
-  color: #64dd77;
-  cursor: pointer;
-  z-index: 10;
-}
-#prevBtn:hover,
-#nextBtn:hover {
-  background-color: rgba(204, 204, 204, 0.4);
-}
+
 #classlist {
   background: #f7f6dc;
 }
@@ -230,6 +203,10 @@ section {
   cursor: pointer;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
   opacity: 0.8;
+}
+.list a {
+  color: #000;
+  text-decoration: none;
 }
 .link__icon .icon_list a:hover,
 #classlist .list .Btn--hover:hover {

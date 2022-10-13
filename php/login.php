@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Ubuntu"
     />
-    <link rel="icon" href="./assets/img/logo/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="../img/logo/favicon.png" type="image/x-icon" />
     <title>VegaNetWork - Login</title>
   </head>
   <body>
     <div class="container" id="container">
       <div class="form-container sign-up-container">
-        <form action="#" class="form" id="form-1">
+        <form action="./include/signup.inc.php" class="form" id="form-1" method="POST">
           <h1>Đăng ký</h1>
           <div class="form-group">
             <label class="input-label" for="fullname">Tên người dùng</label>
@@ -78,12 +78,12 @@
             </label>
             <span class="form-message"></span>
           </div>
-          <button>Đăng ký</button>
+          <button type="submit" name="submit">Đăng ký</button>
         </form>
       </div>
 
       <div class="form-container sign-in-container">
-        <form action="#" class="form" id="form-2">
+        <form action="./include/login.inc.php" class="form" id="form-2" method="POST">
           <h1>Đăng nhập</h1>
           <div class="form-group">
             <label class="input-label" for="email">Email</label>
@@ -133,24 +133,25 @@
                 for="checkbox-sub"
                 class="checkbox-label"
                 id="checkbox-signin"
+                name="remember-me"
               >
                 Hãy nhớ tôi
                 <a class="qmk" href="">Quên mật khẩu</a>
               </label>
             </label>
           </div>
-          <button>Đăng nhập</button>
+          <button  type="submit" name="submit">Đăng nhập</button>
         </form>
       </div>
       <div class="overlay-container">
         <div class="overlay">
           <div class="overlay-panel overlay-left">
-            <img src="./assets/img/logo/Logo.png" alt="VegaNetWork-Icon" />
+            <img src="../img/logo/Logo.png" alt="VegaNetWork-Icon" />
             <br />
             <button class="ghost" id="signUp">Đăng ký</button>
           </div>
           <div class="overlay-panel overlay-right">
-            <img src="./assets/img/logo/Logo.png" alt="VegaNetWork-Icon" />
+            <img src="../img/logo/Logo.png" alt="VegaNetWork-Icon" />
             <br />
             <button class="ghost" id="signIn">Đăng nhập</button>
           </div>
@@ -158,7 +159,7 @@
       </div>
     </div>
 
-    <script src="./assets/js/main.js"></script>
+    <script src="../js/main.js"></script>
     <script>
       // Mong muốn
       // Validate form 1
