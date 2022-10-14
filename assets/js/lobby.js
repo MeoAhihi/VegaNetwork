@@ -8,12 +8,12 @@ const img = document.getElementById("IMG");
 
 btn.forEach(function (value) {
   value.addEventListener("mouseout", () => {
-    img.src = "/assets/img/Loading.png";
+    img.src = "../assets/img/Loading.png";
   });
 });
 
 btn1.addEventListener("mouseover", () => {
-  img.src = "/assets/img/res_img/pic-1.png";
+  img.src = "../assets/img/res_img/pic-1.png";
 });
 
 btn2.addEventListener("mouseover", () => {

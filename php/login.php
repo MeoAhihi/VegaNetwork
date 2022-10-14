@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" />
-  <link rel="icon" href="/assets/img/logo/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="../assets/img/logo/favicon.png" type="image/x-icon" />
   <title>VegaNetWork - Login</title>
 </head>
 
@@ -82,12 +82,12 @@
     <div class="overlay-container">
       <div class="overlay">
         <div class="overlay-panel overlay-left">
-          <img src="/assets/img/logo/Logo.png" alt="VegaNetWork-Icon" />
+          <img src="../assets/img/logo/Logo.png" alt="VegaNetWork-Icon" />
           <br />
           <button class="ghost" id="signUp">Đăng ký</button>
         </div>
         <div class="overlay-panel overlay-right">
-          <img src="/assets/img/logo/Logo.png" alt="VegaNetWork-Icon" />
+          <img src="../assets/img/logo/Logo.png" alt="VegaNetWork-Icon" />
           <br />
           <button class="ghost" id="signIn">Đăng nhập</button>
         </div>
@@ -95,7 +95,7 @@
     </div>
   </div>
 
-  <script src="/assets/js/main.js"></script>
+  <script src="../assets/js/main.js"></script>
   <script>
     // Mong muốn
     // Validate form 1

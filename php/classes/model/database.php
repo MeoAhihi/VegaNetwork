@@ -3,8 +3,8 @@
 class Database
 {
     private $host = "localhost";
-    private $username = "viphong";
-    private $password = "viphong";
+    private $username = "root";
+    private $password = "";
     private $dbname = "veganetwork";
 
     public function Connect()
@@ -18,6 +18,3 @@ class Database
         }
     }
 }
-
-$a = new Database();
-$a->Connect();

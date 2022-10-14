@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" />
-  <link rel="icon" href="../img/logo/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="../assets/img/logo/favicon.png" type="image/x-icon" />
   <script src="https://kit.fontawesome.com/65ca83241b.js" crossorigin="anonymous"></script>
   <title>VegaNetWork - Trang Chủ</title>
 </head>
@@ -18,7 +18,7 @@
       <div class="nav">
         <div class="logo">
           <a href="">
-            <img style="width: 220px" src="/assets/img//logo/Logo_lobby.png" alt="logo" /></a>
+            <img style="width: 220px" src="../assets/img//logo/Logo_lobby.png" alt="logo" /></a>
         </div>
         <div class="nav__user text-white">
           <i style="font-size: 24px" class="fa-solid fa-circle-user"></i>
@@ -44,11 +44,11 @@
       </div>
       <div class="slider">
         <figure class="slider__img">
-          <img width="100%" src="/assets/img/slider/slider2.png" alt="" />
-          <img width="100%" src="/assets/img/slider/slider1.png" alt="" />
-          <img width="100%" src="/assets/img/slider/slider2.png" alt="" />
-          <img width="100%" src="/assets/img/slider/slider1.png" alt="" />
-          <img width="100%" src="/assets/img/slider/slider2.png" alt="" />
+          <img width="100%" src="../assets/img/slider/slider2.png" alt="" />
+          <img width="100%" src="../assets/img/slider/slider1.png" alt="" />
+          <img width="100%" src="../assets/img/slider/slider2.png" alt="" />
+          <img width="100%" src="../assets/img/slider/slider1.png" alt="" />
+          <img width="100%" src="../assets/img/slider/slider2.png" alt="" />
         </figure>
       </div>
     </section>
@@ -59,13 +59,13 @@
           <ul>
             <li>
               <button id="btn1" class="Btn--hover">
-                <img src="/assets/img/icon/fork.png" alt="" />
+                <img src="../assets/img/icon/fork.png" alt="" />
                 <p>Nhà hàng</p>
               </button>
             </li>
             <li>
               <button id="btn2" class="Btn--hover">
-                <img src="/assets/img/icon/table_and_chair.png" alt="" />
+                <img src="../assets/img/icon/table_and_chair.png" alt="" />
                 <p>
                   Quán ăn <br />
                   tầm trung
@@ -74,7 +74,7 @@
             </li>
             <li>
               <button id="btn3" class="Btn--hover">
-                <img src="/assets/img/icon/table.png" alt="" />
+                <img src="../assets/img/icon/table.png" alt="" />
                 <p>
                   Quán ăn <br />
                   bình dân
@@ -83,14 +83,14 @@
             </li>
             <li>
               <button id="btn4" class="Btn--hover">
-                <img src="/assets/img/icon/cake.png" alt="" />
+                <img src="../assets/img/icon/cake.png" alt="" />
                 <p>Quán ngọt</p>
               </button>
             </li>
           </ul>
         </div>
         <div class="list--img col col-half mg-48">
-          <img id="IMG" style="width: 760px; height: 470px" src="/assets/img/Loading.png" alt="Loading..." />
+          <img id="IMG" style="width: 760px; height: 470px" src="../assets/img/Loading.png" alt="Loading..." />
         </div>
       </div>
     </section>
@@ -163,7 +163,7 @@
           </div>
         </div>
         <div class="map col col-half mg-32">
-          <img id="IMG_2" src="/assets/img/Map.png" alt="Quán chay Phước Ngân" />
+          <img id="IMG_2" src="../assets/img/Map.png" alt="Quán chay Phước Ngân" />
         </div>
       </div>
     </section>
@@ -183,9 +183,9 @@
       </div>
       <div class="link__icon col col-half">
         <div class="row icon_list">
-          <a href=""><img src="/assets/img/icon/bxl_figma.png" alt="figma" /></a>
-          <a href=""><img src="/assets/img/icon/akar-icons_pinterest-fill.png" alt="pinterest" /></a>
-          <a href=""><img src="/assets/img/icon/akar-icons_google-contained-fill.png" alt="google" /></a>
+          <a href=""><img src="../assets/img/icon/bxl_figma.png" alt="figma" /></a>
+          <a href=""><img src="../assets/img/icon/akar-icons_pinterest-fill.png" alt="pinterest" /></a>
+          <a href=""><img src="../assets/img/icon/akar-icons_google-contained-fill.png" alt="google" /></a>
         </div>
         <div class="copy_right">
           <h1>&#169; 2022&#x2013; Created by vegaNetWork</h1>
@@ -193,7 +193,7 @@
       </div>
     </section>
   </div>
-  <script src="/assets/js/lobby.js"></script>
+  <script src="../assets/js/lobby.js"></script>
 </body>
 
 </html>
